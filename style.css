@@ -6,3 +6,26 @@
   user-select: none;
   cursor: default;
 }
+
+svg {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+
+  width: 30%;
+  height: 500px;
+  margin: auto;
+
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: spiral 6s linear forwards;
+
+  /* border: 1px solid black; */
+}
+
+@keyframes spiral {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
