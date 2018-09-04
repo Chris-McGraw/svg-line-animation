@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: #000;
 }
 
 svg {
@@ -32,5 +32,16 @@ svg {
 @keyframes traceOutline {
   to {
     stroke-dashoffset: 0;
+  }
+}
+
+.fade-in {
+  animation: colorFade 2s linear forwards;
+}
+
+@keyframes colorFade {
+  to {
+    stroke: #000;
+    fill: #fcf798;
   }
 }
