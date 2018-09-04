@@ -24,7 +24,7 @@ svg {
   stroke: #fcf798;
   fill: #000;
   stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
+  stroke-dashoffset: 1060;
 
   animation: traceOutline 4s linear forwards;
 }
