@@ -7,24 +7,29 @@
   cursor: default;
 }
 
+body {
+  background-color: black;
+}
+
 svg {
   position: absolute;
-  top: 80px;
+  top: 0;
   left: 0;
   right: 0;
 
-  width: 30%;
-  height: 500px;
+  width: 50%;
+  height: 600px;
   margin: auto;
 
+  stroke: #fcf798;
+  fill: #000;
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: spiral 6s linear forwards;
 
-  /* border: 1px solid black; */
+  animation: traceOutline 4s linear forwards;
 }
 
-@keyframes spiral {
+@keyframes traceOutline {
   to {
     stroke-dashoffset: 0;
   }
